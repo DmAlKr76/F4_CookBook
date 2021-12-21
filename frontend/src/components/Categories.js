@@ -19,7 +19,7 @@ class Categories extends Component {
         }
 
     loadCategories() {
-        fetch("http://127.0.0.1:8000/api/categories/").then(
+        fetch("http://127.0.0.1:8000/categories/").then(
             (response) => {
                 if (response.status == 200) {
                 return response.json();
@@ -57,3 +57,4 @@ class Categories extends Component {
 }
 
 export default Categories;
+

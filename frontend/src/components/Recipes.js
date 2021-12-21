@@ -7,7 +7,7 @@ const Recipes = () => {
     const query = new URLSearchParams(search);
     return (
     <h2>
-        Recipes from category: {query.get('sorting')}
+        Рецепт из категории: {query.get('catId')}
     </h2>
     );
 }
